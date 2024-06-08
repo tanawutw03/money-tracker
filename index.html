@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>โปรแกรมบันทึกรายรับ-จ่าย</h2>
+    <div class="container">
+      <h4>ยอดคงเหลือ (บาท)</h4>
+      <h1 id="balance">&#3647;0.00</h1>
+      <div class="income-expense-container">
+        <div>
+          <h4>รายรับ</h4>
+          <p id="money-plus" class="money plus">&#3647;5000</p>
+        </div>
+        <div>
+          <h4>รายจ่าย</h4>
+          <p id="money-minus" class="money minus">&#3647;200</p>
+        </div>
+      </div>
+    </div>
+    <h3>ประวัติธุรกรรม</h3>
+    <ul class="list" id="list">
+      <!-- <li class="minus">
+        ค่าซ่อมรถ <span>400</span> <button class="delete-btn">X</button>
+      </li>
+      <li class="plus">
+        เงินเดือน <span>15000</span> <button class="delete-btn">X</button>
+      </li> -->
+    </ul>
+    <h3>เพิ่มธุรกรรม</h3>
+    <form action="form-submit">
+      <div class="form-control">
+        <label for="transaction-name">ชื่อรายการ</label>
+        <input
+          type="text"
+          name=""
+          id="transaction-name"
+          placeholder="ระบุชื่อรายการธุรกรรม"
+        />
+      </div>
+      <div class="form-control">
+        <label for="transaction-amount"
+          >จำนวนเงิน <br />(+ รายรับ, - รายจ่าย)</label
+        >
+        <input
+          type="number"
+          name=""
+          id="transaction-amount"
+          placeholder="ระบุจำนวนเงิน"
+        />
+      </div>
+      <button class="btn">เพิ่มธุรกรรม</button>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
