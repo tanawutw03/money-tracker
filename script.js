@@ -79,4 +79,29 @@ const calculateMoney = () => {
   moneyMinus.innerText = `฿` + formatFinancialNumber(expense);
 };
 
+function autoID() {
+  return Math.floor(Math.random() * 1000000);
+}
+
+function addTransaction(e) {
+  e.preventDefault();
+  if (text.value.trim() === "" || amount.value === "") {
+    alert("กรุณากรอกข้อมูลให้ครบ");
+  } else {
+    console.log(autoID());
+    const data = {
+      id: autoID(),
+      text: text.value,
+      amount: +amount.value,
+    };
+    transactions.push(data);
+    addDataToList(data);
+    calculateMoney();
+    text.value = "";
+    amount.value = "";
+  }
+  console.log("Send data to func addTransaction");
+}
+form.addEventListener("submit", addTransaction);
+
 init();
