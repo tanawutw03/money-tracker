@@ -11,7 +11,7 @@ This is a solution to the [พัฒนาเว็บด้วย JavaScript 40
 
 ## Screenshot
 
-![Screenshot](./screenshot.png)
+![Screenshot](https://image.thum.io/get/https://money-tracker-ruddy.vercel.app/)
 
 ## Technologies Used
 
